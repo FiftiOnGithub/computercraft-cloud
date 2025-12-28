@@ -206,3 +206,5 @@ function locate(_nTimeout, _bDebug)
         return nil
     end
 end
+
+return {locate = locate}
