@@ -465,7 +465,7 @@ function gui.run(state)
                     needsRedraw = true
                 end
             elseif activeTab == "MAP" and p3 > 1 and p3 < height then
-                local mapW, mapH = width, height - 2
+                local mapW, mapH = width, height - 1
                 local clickedRelX = p2 - 1
                 local clickedRelY = p3 - 2
                 scrollX = scrollX + (clickedRelX - mapW / 2)
@@ -495,4 +495,5 @@ function gui.run(state)
 end
 
 return gui
+
 
