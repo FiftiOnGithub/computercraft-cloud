@@ -399,7 +399,7 @@ function gui.run(state)
                     local q = state.quarry
                     local x1, x2 = math.min(q.minX, q.maxX), math.max(q.minX, q.maxX)
                     local z1, z2 = math.min(q.minZ, q.maxZ), math.max(q.minZ, q.maxZ)
-                    local mapW, mapH = width, height - 2
+                    local mapW, mapH = width, height - 1
                     local midWorldX = (x1 + x2) / 2
                     local midWorldZ = (z1 + z2) / 2
                     scrollX = (midWorldX - x1) + 1 - (mapW / 2)
@@ -495,3 +495,4 @@ function gui.run(state)
 end
 
 return gui
+
